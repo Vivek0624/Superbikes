@@ -1,0 +1,141 @@
+#header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg); 
+    background-size: cover;  
+    background-position: center;
+   
+    
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+///////////////////////////////////////
+///////////// HISTORY 
+
+.history {
+    background-color: #333;
+    height: 110vh;
+    display: flex;
+    margin: 3rem 0;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+   &__img {
+    height: 100%;
+    width: 100%; 
+       background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.2)), url(../img/history.jpg);  
+       background-size: cover;
+       background-position: center;
+
+    // &--duke {
+    //     height: 100%;
+    //     width: 100%; 
+    // }
+
+       @media screen and (max-width: 768px) {
+         display: none;     
+    }
+   }
+}
+
+
+///////////////////////////////////////
+///////////// CATEGORIES 
+
+.categories {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/categories.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   &__box {
+       height: 100%;
+   }
+}
+
+
+///////////////////////////////////////
+///////////// CONTACT FORM 
+
+#contact {
+    background-color: #333;
+    margin: 3rem 0;
+    padding: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    @media screen and (max-width: 1200px) {  
+        flex-direction: column;
+        justify-content: center;
+  }
+}
+
+#map {
+
+    // width: 48%; 
+   width: 100%;
+
+    @media screen and (max-width: 768px) {
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        text-align: center; 
+    }
+}
+
+///////////////////////////////////////
+///////////// LOGO 
+.logo {
+    height: 100vh; 
+    background-color: #252525;
+    margin-bottom: 2rem;
+}
+
+
+.footer-box {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+        font-size: 200%;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: var(--color-default);
+        margin: 4rem 0;
+    }
+}
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    color: currentColor;
+    padding-bottom: .5rem;
+}
+
+.footer-link:active,
+.footer-link:hover {
+    border-bottom: 1px solid var(--color-default);
+}
+
+.footer-icon {
+    padding-top: .4rem;
+    color: red;
+}

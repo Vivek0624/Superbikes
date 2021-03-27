@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="vendors/icon-font.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>SuperBikes</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div><a class="navbar__logo" href="#">Superbikes</a></div>
+            <ul class="navbar__items">
+                <li><a class="navbar__links" href="#">Home</a></li>
+                <li><a class="navbar__links" href="#">Categories</a></li>
+                <li><a class="navbar__links" href="#">History</a></li>
+                <li><a class="navbar__links" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="textbox">
+            <h1 class="textbox-head">Superbikes</h1>
+            <p class="textbox-paragraph">
+                Speed defines everything
+            </p>
+        </div>
+
+        <a href="#" class="btn btn-1">Learn more</a>
+    </header>
+
+
+
+   
+
+  <section class="history">
+    <!-- <img class="history__img--duke" src="img/history.jpg" alt="Duke"> -->
+      <div class="history__img"></div>
+      <div class="history__info">
+          <h2 class="heading-secondary history__info--heading">Superbikes Origin</h2>
+          <p class="history__info--text">Launched in 1969, it was the Japanese manufacturer’s first attempt at building a bike for the American market, It’s nearly 50 years since the modern superbike was created. These are bikes optimised for road racing, with engines of 1000cc capacity, or thereabouts.</p>
+          <h3 class="history__info--brands">Oldest Bikes Brands</h3>
+          <ul class="history__info--list">
+            <li class="heading-secondary history__info--items">#1 Founded 1876 – CASTELLI CYCLING, ITALY.</li>
+            <li class="heading-secondary history__info--items">#2 Founded 1946 – DE MARCHI SPORT, ITALY.</li>
+            <li class="heading-secondary history__info--items">#3 Founded 1958 – SCOTT, SWITZERLAND.</li>
+            <li class="heading-secondary history__info--items">#4 Founded 1970 – SANTINI, ITALY.</li>
+            <li class="heading-secondary history__info--items">#5 Founded 1970 – NALINI, ITALY.</li>
+          </ul>
+      </div>
+  </section>
+
+
+  <section class="categories" id="categories"> 
+    <h2 class="heading-secondary categorie__text">SuperBikes categories</h2>
+<div class="categorie">
+<div class="categorie__items">
+    <i class="categorie__icon icon-basic-battery-charge"></i>
+    <h3 class="categorie__heading">Electric</h3>
+    <p class="categorie__heading--text">E-bikes use rechargeable batteries that can travel up to 25 to 45 km/h, much faster than most people would cycle.</p>
+</div>
+
+<div class="categorie__items">
+    <i class="categorie__icon icon-basic-map"></i>
+    <h3 class="categorie__heading">Sport</h3>
+    <p class="categorie__heading--text">Sport bikes emphasize top speed, acceleration, braking, handling and grip on paved roads.</p>
+</div>
+
+<div class="categorie__items">
+    <i class="categorie__icon icon-basic-bolt"></i>
+    <h3 class="categorie__heading">Standard</h3>
+    <p class="categorie__heading--text">Standards, also called naked bikes or roadsters, are versatile, general-purpose street motorcycles.</p>
+</div> 
+</div>
+</section>
+
+
+
+
+<section id="contact">
+       
+            <div class="contact__form"> 
+                <h2 class="heading-secondary contact__form--heading">Contact Form</h2>
+                <p class="contact__form--paragraph">If You Wanna Contact Us, Please Fill Up The Form.</p>
+                <form name='contact' method='POST'><input type='hidden' name='form-name' value='contact' />
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-2 submit-button">
+                </form>
+            </div>
+       
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15132.944575281474!2d73.84897755508494!3d18.518227919487526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c065144d8edf%3A0x3703b8095866c54b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1614171334756!5m2!1sen!2sin"
+             width="620px" height="565px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+</section> 
+ 
+<section class="logo">
+    <div class="logo__box">
+        <h2 class="heading-secondary logo__box--text">Great Supercar Brands In The World</h2>
+    </div>
+    <div class="logo__img">
+        <img class="logo__img--brands" src="img/logo.png" alt="Brands-logo">
+    </div>
+</section>
+
+<footer class="footer-box">
+                   
+    <p>copyright &nbsp; &copy; &nbsp;2021 by <a class="footer-link" href="#"> SuperBikes.</a> All rights reserved.<i class="footer-icon icon-basic-heart"></i></p>
+    <!-- <p class="mockup">Mockup by @raihan ahmad</p> -->
+</footer>
+
+  <!-- <script>
+    function initMap() {
+        var location = {lat: 18.520430, lng: 73.856743};
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        }); 
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3DKCmTGpPPwcwNKDvFf6BjfQDUkg1Lbc&callback=initMap"
+  type="text/javascript"></script>  -->
+</body>
+</html>

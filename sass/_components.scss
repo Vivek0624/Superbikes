@@ -1,0 +1,322 @@
+
+///////////////////////////////
+////////NAVBAR
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1.6rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__logo {
+        margin-left: 2rem;
+        font-size: 300%;
+        font-weight: 700;
+        color: var(--color-default);
+        text-decoration: none;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    &__links:link,
+    &__links:visited {
+        color: var(--color-default);
+        display: inline-block;
+        text-decoration: none;
+        font-size: 180%; 
+        margin-right: 4rem;
+        padding: 0.8rem 0;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s ease-in;
+
+            
+    @media screen and (max-width: 900px) {  
+        display: none;
+  }
+    }
+
+    &__links:hover {
+        border-bottom: 2px solid var(--color-default);
+    }
+
+}
+
+///////////////////////////
+/////// HEADER TEXT
+
+.textbox {
+    margin-top: 25rem;
+   
+
+
+    &-head {
+        
+        letter-spacing: 1rem;
+        font-weight: 400; 
+    }
+
+    &-paragraph {
+        text-align: center;
+        font-size: 200%;
+        letter-spacing: 0.9rem; 
+        font-weight: 400;
+    }
+}
+
+///////////////////////////
+/////// BUTTON 
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 50px; 
+    color: #333333;
+  }
+  
+  .btn-1:link,
+  .btn-1:visited {
+    background-color: #f5f4f4;
+    margin-top: 1.2rem;
+    font-size: 160%;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  
+   .btn-1:hover,
+   .btn-1:active {
+     border: 2px solid var(--color-default-dark); 
+     background-color: var(--color-default-dark);
+     color: #fff;
+   }
+
+  .btn-2:link,
+  .btn-2:visited {
+    background-color: var(--color-default);
+    font-size: 160%;
+    
+    border: 2px solid transparent;
+    transition: all 0.4s;
+  }
+  
+   .btn-2:hover,
+   .btn-2:active {
+     border: 2px solid var(--color-default);  
+     background-color: var(--color-default);
+     color: #333; 
+     box-shadow: var(--shadow-dark); 
+   } 
+  
+
+///////////////////////////////////////
+///////////// HISTORY 
+
+.history__info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 2rem;
+    color: #fff;
+
+    &--heading {
+        font-size: 380%;  
+        margin-bottom: 2rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &--text {
+        font-size: 160%; 
+        margin-bottom: 4rem; 
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 3rem;
+    }
+
+    &--brands {
+        font-size: 260%;
+        margin-bottom: 3.3rem;
+        text-align: center;
+        letter-spacing: 8px;
+    }
+
+    &--list {
+        list-style: none;
+       text-align: center;
+       font-size: 110%;
+       letter-spacing: 1px;
+    }
+
+    &--items {
+        font-size: 160%;
+        margin-bottom: 2rem;
+        padding-bottom: .6rem; 
+    }
+}
+
+
+///////////////////////////////////////
+///////////// CATEGORIES 
+
+.categorie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    padding: 2rem;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+
+    &__text {
+       
+        font-size: 290%;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            padding-top: 4rem;
+          }
+       
+    }
+
+    &__items {
+       margin: 10rem 2rem 10rem 2rem; 
+        text-align: center;
+        
+        @media screen and (max-width: 768px) {
+            margin: 2rem 1rem 2rem 1rem; 
+          }
+        
+    }
+
+    &__icon {
+       font-size: 290%;
+    }
+
+    &__heading {
+        padding-top: 0.6rem;
+        font-size: 280%; 
+
+        &--text {
+            padding-top: 1.8rem;
+            font-size: 180%;  
+        }
+    }
+}
+
+
+
+///////////////////////////////////////
+///////////// CONTACT FORM 
+
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        padding: 4rem;
+        width: 100%; 
+} 
+
+form {
+    margin-bottom: 4.3rem;
+}
+ 
+    
+    &--heading {
+        font-size: 290%;
+        font-weight: 400;
+        letter-spacing: 4px; 
+        
+        margin: 2rem 0 3rem 0;
+        text-align: center;
+    } 
+
+    &--paragraph {
+        font-size: 210%;
+        font-weight: 300;
+        letter-spacing: 2px;
+        
+        text-align: center;   
+    }   
+}
+
+.form-group {
+    margin: 2rem 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .2rem;  
+    font-size: 180%; 
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.form-group input {
+    padding: .7rem;
+    width: 90%; 
+
+    outline: none;
+    border: solid 1px #333;
+    border-radius: 4px; 
+  
+}
+
+.form-group  textarea { 
+    padding: .3rem;
+    height: 7rem;
+    width: 90%;
+    border-radius: 4px;
+}
+
+
+
+///////////////////////////////////////
+///////////// LOGO 
+
+.logo__box {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 4rem;
+
+    &--text {
+        font-size: 300%; 
+        letter-spacing: 1px; 
+        text-align: center;  
+        padding: 3rem;
+    }
+}
+
+.logo__img {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+
+    &--brands {
+        height: 90%;
+        width: 70%;  
+
+        @media screen and (max-width: 768px) {
+            padding: 4rem;
+           height: 100%;
+           width: 100%;
+           }
+    }
+} 
+
